@@ -15,6 +15,8 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "@supabase/supabase-js": "^1.29.2",
+    "cookie": "^0.4.1",
+    "supabase-ui-svelte": "^0.1.1"
   }
 }
