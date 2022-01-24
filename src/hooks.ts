@@ -1,4 +1,5 @@
-import { handleSession } from 'svelte-kit-cookie-session';
+import { handleSession } from '$lib/svelte-kit-cookie-session';
+// const { handleSession } = require('svelte-kit-cookie-session');
 
 export async function getSession({ locals }) {
 	return locals.session.data;
