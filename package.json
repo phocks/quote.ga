@@ -2,6 +2,7 @@
 	"name": "quote.ga",
 	"version": "0.0.1",
 	"exports": "./dist/index.js",
+	"license": "UNLICENSED",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
