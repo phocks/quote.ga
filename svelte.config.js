@@ -6,12 +6,18 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: preprocess(),
-
 	kit: {
 		adapter: adapter(),
 
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		kit: {
+			vite: {
+				optimizeDeps: {
+					exclude: ['svelte-kit-cookie-session']
+				}
+			}
+		}
 	}
 };
 
