@@ -28,5 +28,7 @@
 		"typescript": "^4.4.3"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"svelte-kit-cookie-session": "^2.0.1"
+	}
 }
