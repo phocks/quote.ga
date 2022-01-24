@@ -8,11 +8,6 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		vite: {
-			optimizeDeps: {
-				exclude: ['svelte-kit-cookie-session']
-			}
-		},
 		adapter: adapter(),
 
 		// hydrate the <div id="svelte"> element in src/app.html
