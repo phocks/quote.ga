@@ -1,4 +1,4 @@
-<div class="main"><slot /></div>
+<div class="main"><div><slot /></div></div>
 
 <style lang="scss">
   :global(body) {

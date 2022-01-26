@@ -1,31 +1,18 @@
-<script context="module" lang="ts">
-  // export async function load({ params, fetch, session, stuff }) {
-  //   const url = `/api/login`;
-  //   const res = await fetch(url);
-
-  //   if (res.ok) {
-  //     return {
-  //       props: {
-  //         article: await res.json(),
-  //       },
-  //     };
-  //   }
-
-  //   return {
-  //     status: res.status,
-  //     error: new Error(`Could not load ${url}`),
-  //   };
-  // }
-</script>
-
 <script lang="ts">
- 
+	import {user} from "$lib/sessionStore"
+	import {supabase} from "$lib/db"
+	import Auth from "$lib/components/Auth.svelte"
+	import Profile from "$lib/components/Profile.svelte"
+	user.set(supabase.auth.user())
+	supabase.auth.onAuthStateChange((_, session) => {
+		user.set(session.user)
+	})
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
-
-<style>
-</style>
+<div class="container" style="padding: 50px 0 100px 0;">
+	{#if $user}
+			<Profile />
+	{:else}
+			<Auth />
+	{/if}
+</div>
