@@ -1,19 +1,22 @@
 <div class="main"><div><slot /></div></div>
 
 <style lang="scss">
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
   :global(body) {
     margin: 0;
   }
 
   .main {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background-color: #f8f8f8;
-    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #cce9ff;
   }
 </style>
