@@ -35,6 +35,8 @@
     "@supabase/supabase-js": "^1.29.4",
     "node-sass": "^7.0.1",
     "sass": "^1.49.0",
+    "svelte-awesome": "^2.4.4",
+    "svelte-icons": "^2.1.0",
     "svelte-kit-cookie-session": "^2.0.1"
   }
 }
