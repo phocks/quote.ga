@@ -15,13 +15,16 @@
     margin: 0;
   }
 
+  :global(#svelte, body, html) {
+    height: 100%
+  }
+
   .main {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #111;
