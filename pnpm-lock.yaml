@@ -15,10 +15,8 @@ specifiers:
   prettier-plugin-svelte: ^2.4.0
   sass: ^1.49.0
   svelte: ^3.44.0
-  svelte-awesome: ^2.4.4
   svelte-check: ^2.2.6
   svelte-icons: ^2.1.0
-  svelte-kit-cookie-session: ^2.0.1
   svelte-preprocess: ^4.9.4
   tslib: ^2.3.1
   typescript: ^4.4.3
@@ -27,9 +25,7 @@ dependencies:
   '@supabase/supabase-js': 1.29.4
   node-sass: 7.0.1
   sass: 1.49.0
-  svelte-awesome: 2.4.4_svelte@3.46.3
   svelte-icons: 2.1.0
-  svelte-kit-cookie-session: 2.0.2
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.17
@@ -2657,14 +2653,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-awesome/2.4.4_svelte@3.46.3:
-    resolution: {integrity: sha512-z0OLl6WoTMkOdtjcFEmOGisLedbGioxA+mPXQFjcL6BhFsMte6dBUrQpibowz/eKkxRQLFp8eUl86G0SqE2Rkw==}
-    peerDependencies:
-      svelte: ^3.43.1
-    dependencies:
-      svelte: 3.46.3
-    dev: false
-
   /svelte-check/2.3.0_42aacf1fffd555d0b07190ec579afdf7:
     resolution: {integrity: sha512-SBKdJyUmxzPmJf/ZPqDSQOoa9JzOcgEpV7u3UaYcgVn7fA0veZ3FA5JgLU8KYtf84Gp6guBVcrC7XKLjJa5SXQ==}
     hasBin: true
@@ -2704,10 +2692,6 @@ packages:
 
   /svelte-icons/2.1.0:
     resolution: {integrity: sha512-rHPQjweEc9fGSnvM0/4gA3pDHwyZyYsC5KhttCZRhSMJfLttJST5Uq0B16Czhw+HQ+HbSOk8kLigMlPs7gZtfg==}
-    dev: false
-
-  /svelte-kit-cookie-session/2.0.2:
-    resolution: {integrity: sha512-+JfunYbraIOkecOJlC1iYqH9g6YOY8MXyUdE3hTZquR1JrODmOZZ+pVPmZuVIFpM5sStJf/jF1NT5306TWE9Gw==}
     dev: false
 
   /svelte-preprocess/4.10.2_537c29915cb23f24316ac68fe3dac2cc:
