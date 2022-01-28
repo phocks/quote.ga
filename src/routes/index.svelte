@@ -13,7 +13,8 @@
   <!-- <title>Quote</title> -->
 </svelte:head>
 
-<div class="container" style="padding: 50px 0 100px 0;">
+<div class="container">
+  <!-- <button>Login</button> -->
   <!-- {#if $user}
     <Profile />
   {:else}
@@ -22,4 +23,14 @@
 </div>
 
 <style lang="scss">
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 </style>

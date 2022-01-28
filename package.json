@@ -4,7 +4,7 @@
   "exports": "./dist/index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "HOST=0.0.0.0 svelte-kit dev --host 0.0.0.0",
+    "dev": "svelte-kit dev --host",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",

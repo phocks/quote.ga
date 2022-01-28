@@ -27,7 +27,7 @@
     height: 100%;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    color: #111;
+    color: #333;
     background-color: #cce9ff;
   }
 </style>
