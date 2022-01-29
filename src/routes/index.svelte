@@ -1,12 +1,28 @@
-<script lang="ts">
-  import { user } from "$lib/sessionStore";
+<script context="module" lang="ts">
   import { supabase } from "$lib/db";
+
+  export async function load() {
+    let user = supabase.auth.user();
+    return {
+      props: { user: user },
+    };
+  }
+</script>
+
+<script lang="ts">
+  // import { user } from "$lib/sessionStore";
+  // import { supabase } from "$lib/db";
   import Auth from "$lib/components/Auth.svelte";
   import Profile from "$lib/components/Profile.svelte";
-  user.set(supabase.auth.user());
-  supabase.auth.onAuthStateChange((_, session) => {
-    user.set(session.user);
-  });
+
+  export let user;
+
+  // user.set(supabase.auth.user());
+  // supabase.auth.onAuthStateChange((_, session) => {
+  //   user = session.user;
+  // });
+
+  $: console.log(user);
 </script>
 
 <svelte:head>
@@ -15,11 +31,11 @@
 
 <div class="container">
   <!-- <button>Login</button> -->
-  <!-- {#if $user}
+  {#if user}
     <Profile />
   {:else}
     <Auth />
-  {/if} -->
+  {/if}
 </div>
 
 <style lang="scss">

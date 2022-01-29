@@ -1,5 +1,5 @@
 <script lang="ts">
-  
+  import "$lib/styles.css";
   import Navigtion from "$lib/components/Navigation.svelte";
 </script>
 
@@ -11,14 +11,6 @@
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-  :global(body) {
-    margin: 0;
-  }
-
-  :global(#svelte, body, html) {
-    height: 100%
-  }
-
   .main {
     display: flex;
     align-items: center;
@@ -29,5 +21,6 @@
     font-size: 16px;
     color: #333;
     background-color: #cce9ff;
+    max-width: 100vw;
   }
 </style>

@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+#svelte,
+body,
+html {
+  height: 100%;
+}
