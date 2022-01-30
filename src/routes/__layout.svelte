@@ -5,7 +5,7 @@
 
 <div class="main">
   <Navigtion />
-  <div><slot /></div>
+  <slot />
 </div>
 
 <style lang="scss">
@@ -14,13 +14,11 @@
   .main {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #333;
     background-color: #cce9ff;
-    max-width: 100vw;
   }
 </style>
