@@ -34,15 +34,46 @@
   };
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
-  <label for="email">Email</label>
-  <input required type="email" id="email" />
-  <br />
-  <label for="password">Password</label>
-  <input required type="password" id="password" />
-
-  <button type="submit">Submit</button>
-</form>
+<div class="join">
+  <div>Join</div>
+  <form on:submit|preventDefault={handleSubmit}>
+    <input required type="email" id="email" placeholder="email" />
+    <input required type="password" id="password" placeholder="password" />
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 <style lang="scss">
+  .join {
+    width: 100%;
+    text-align: center;
+
+    form {
+      input {
+        display: block;
+        margin: auto;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        width: 200px;
+        font-family: inherit;
+        color: inherit;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        width: 200px;
+        font-family: inherit;
+        color: inherit;
+      }
+    }
+  }
 </style>
