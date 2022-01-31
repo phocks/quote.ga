@@ -3,9 +3,9 @@
 </script>
 
 <script lang="ts">
-  import { supabase } from "$lib/db";
-  let user = supabase.auth.user();
-  import { user } from "$lib/sessionStore";
+  import { user } from "$lib/db";
+  // let user = supabase.auth.user();
+  // import { user } from "$lib/sessionStore";
   // import { supabase } from "$lib/db";
   import Auth from "$lib/components/Auth.svelte";
   import Profile from "$lib/components/Profile.svelte";
@@ -15,7 +15,7 @@
   //   user = session.user;
   // });
 
-  $: console.log(user);
+  $: console.log($user);
 </script>
 
 <svelte:head>
@@ -24,7 +24,7 @@
 
 <div class="container">
   <!-- <button>Login</button> -->
-  {#if user}
+  {#if $user}
     <Profile />
   {:else}
     <Auth />

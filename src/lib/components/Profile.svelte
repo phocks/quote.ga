@@ -1,6 +1,6 @@
 <script>
   import { supabase } from "$lib/db";
-  import { user } from "$lib/sessionStore";
+  import { user } from "$lib/db";
   import { onMount } from "svelte";
 
   let loading = true;
