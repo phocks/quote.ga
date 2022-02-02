@@ -1,5 +1,4 @@
 <script context="module" lang="ts">
-
 </script>
 
 <script lang="ts">
@@ -15,7 +14,7 @@
   //   user = session.user;
   // });
 
-  $: console.log($user);
+  // $: console.log($user);
 </script>
 
 <svelte:head>
@@ -23,12 +22,14 @@
 </svelte:head>
 
 <div class="container">
+  This is a test.
+
   <!-- <button>Login</button> -->
-  {#if $user}
+  <!-- {#if $user}
     <Profile />
   {:else}
     <Auth />
-  {/if}
+  {/if} -->
 </div>
 
 <style lang="scss">
@@ -38,9 +39,6 @@
   }
 
   .container {
-    text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 100%;
+    padding: 1rem;
   }
 </style>

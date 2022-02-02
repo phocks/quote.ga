@@ -7,6 +7,8 @@
 body {
   margin: 0;
   font-family: 'Source Serif 4', sans-serif;
+  background-color: #cce9ff;
+  color: rgb(35, 60, 85);
 }
 
 #svelte,
